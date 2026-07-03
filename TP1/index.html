@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Ma page</title>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
-    <h1> Pépinière IBM i </h1>
-    <p> Bienvenue dans l'environnement de formation !</p>
-    <h1>Connexion</h1>
+    <h1 class="page_title"> Pépinière IBM i </h1>
+    <p class="welcom_text"> Bienvenue dans l'environnement de formation !</p>
+    <h2 class="login_litle">Connexion</h2>
    <form action="liste.html" method="post">
     <label for="username">Identifiant :</label>
     <br><br>
@@ -21,9 +22,7 @@
 
     <input type="password" autocomplete="off" id="password" name="password" required>
     <br><br>
-
      <input type="submit" value="Se connecter">
-    <a href="liste.html"> <button>Se connecter</button> </a>
 </form>
 </body>
 </html>

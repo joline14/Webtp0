@@ -1,0 +1,23 @@
+body {
+    background-color: #F5F5F5;
+    font-family: Verdana;
+}
+
+.page.title {
+    color: #1AB09C;
+}
+
+.welcom_text {
+    color: #D8534C;
+    font-size: 20px;
+}
+
+.login_litle{
+    color:blue;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
