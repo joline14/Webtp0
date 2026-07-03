@@ -1,0 +1,7 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
