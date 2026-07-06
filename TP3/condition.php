@@ -4,9 +4,11 @@ if (isset($_POST['btnSubmit'])) {
     $nombre = $_POST['nombre'];
 
     if ($nombre % 3 == 0 && $nombre % 5 == 0) {
-        echo $nombre . " est un multiple de 3 et de 5.";
+       $resultat = $nombre . " est un multiple de 3 et de 5.";
+        $classe = "succes";
     } else {
-        echo $nombre . " n'est pas un multiple de 3 et de 5.";
+      $resultat = $nombre . " n'est pas un multiple de 3 et de 5.";
+        $classe = "erreur";
     }
 }
 
@@ -17,6 +19,7 @@ if (isset($_POST['btnSubmit'])) {
 <head>
     <meta charset="UTF-8">
     <title>Saisie d'un nombre</title>
+    <link rel="stylesheet" href="./CSS/condition.css">
 </head>
 <body>
 
@@ -26,5 +29,10 @@ if (isset($_POST['btnSubmit'])) {
         <button name="btnSubmit" type="submit">Valider</button>
     </form>
 
+    <?php if (isset($resultat)) { ?>
+        <div class="resultat <?php echo $classe; ?>">
+            <?php echo $resultat; ?>
+        </div>
+    <?php } ?>
 </body>
 </html>
